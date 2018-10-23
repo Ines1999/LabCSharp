@@ -19,4 +19,7 @@ Color, Body, Wheel, Salon, Conditioner.
  CarBuildera. Створюють об'єкт Car і визначають інтерфейс для доступу до нього
 - Director: розпорядник - створює об'єкт, використовуючи об'єкти CarBuilder
 
-![alt text](https://github.com/Ines1999/LabCSharp/blob/Lab1/1lab.PNG)
+Наведемо UML-діаграму класів:
+
+
+![alt text](https://github.com/Ines1999/LabCSharp/blob/Lab1/UML1.PNG)
