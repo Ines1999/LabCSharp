@@ -141,7 +141,7 @@ namespace _1lab
     //цвет
     class Color
     {
-        // какого сорта мука
+        // какого цвета машина
         public string Name { get; set; }
     }
     // кузов
