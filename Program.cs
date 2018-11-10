@@ -6,14 +6,14 @@ using System.Linq;
 namespace _2lab
 {
     class Program
-{
-    static void Main(string[] args)
     {
+        static void Main(string[] args)
+        {
             //создаем текст
-        Component NewText = new Text("Новый Текст");
-        //создаем абзацы
-        Component paragraph1 = new Paragraph("Абзац1");
-        Component paragraph2 = new Paragraph("Абзац2");
+            Component NewText = new Text("Новый Текст");
+            //создаем абзацы
+            Component paragraph1 = new Paragraph("Абзац1");
+            Component paragraph2 = new Paragraph("Абзац2");
             //создаем предложения
             Component sentence1 = new Sentence("Предложение1");
             Component sentence2 = new Sentence("Предложение2");
@@ -24,7 +24,7 @@ namespace _2lab
             Component Word3 = new Word("Слово3", "Мир");
             Component Word4 = new Word("Слово4", "! ");
             Component Word5 = new Word("Слово5", "Hello");
-            Component Word6 = new Word("Слово6", "Шестое слово");
+            Component Word6 = new Word("Слово6", "Слово");
             // добавляем  в абзац два предложения
             paragraph1.Add(sentence1);
             paragraph1.Add(sentence2);
@@ -43,34 +43,33 @@ namespace _2lab
             // выводим все данные
             NewText.Print();
 
-        Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
             NewText.Print_Content();
 
             Console.Read();
+        }
     }
-}
- 
-abstract class Component
-{
-    protected string name;
- 
-    public Component(string name)
-    {
-        this.name = name;
-    }
- 
-    public virtual void Add(Component component){}
 
-    public virtual void Format(Component component) { }
-
-    public virtual void Remove(Component component) { }
- 
-    public virtual void Print()
+    abstract class Component
     {
-        Console.WriteLine(name);
-    }
+        protected string name;
+
+        public Component(string name)
+        {
+            this.name = name;
+        }
+
+        public virtual void Add(Component component) { }
+
+
+        public virtual void Remove(Component component) { }
+
+        public virtual void Print()
+        {
+            Console.WriteLine(name);
+        }
         public virtual void Print_Content()
         {
             Console.WriteLine(name);
@@ -108,7 +107,7 @@ abstract class Component
         }
         public override void Print_Content()
         {
-            
+
             for (int i = 0; i < components.Count; i++)
             {
                 components[i].Print_Content();
@@ -117,37 +116,37 @@ abstract class Component
         }
     }
 
-    class Paragraph :Component
-{
-    private List<Component> components = new List<Component>();
- 
-    public Paragraph(string name)
-        : base(name)
+    class Paragraph : Component
     {
-    }
- 
-    public override void Add(Component component)
-    {
-        components.Add(component);
-    }
- 
-    public override void Remove(Component component)
-    {
-        components.Remove(component);
-    }
- 
-    public override void Print()
-    {
-        Console.WriteLine("Параграф " + name);
-        Console.WriteLine("Предложение:");
-        for(int i=0; i<components.Count;i++)
+        private List<Component> components = new List<Component>();
+
+        public Paragraph(string name)
+            : base(name)
         {
-            components[i].Print();
         }
-    }
+
+        public override void Add(Component component)
+        {
+            components.Add(component);
+        }
+
+        public override void Remove(Component component)
+        {
+            components.Remove(component);
+        }
+
+        public override void Print()
+        {
+            Console.WriteLine("Параграф " + name);
+            Console.WriteLine("Предложение:");
+            for (int i = 0; i < components.Count; i++)
+            {
+                components[i].Print();
+            }
+        }
         public override void Print_Content()
         {
-            
+
             for (int i = 0; i < components.Count; i++)
             {
                 components[i].Print_Content();
@@ -183,39 +182,38 @@ abstract class Component
             for (int i = 0; i < components.Count; i++)
             {
                 components[i].Print();
-                
+
             }
-            
+
         }
         public override void Print_Content()
         {
-           
+
             for (int i = 0; i < components.Count; i++)
             {
                 components[i].Print_Content();
 
             }
-            
+
         }
     }
 
     class Word : Component
-{
-        protected string content;
-    public Word(string name, string content)
-            : base(name)
     {
+        protected string content;
+        public Word(string name, string content)
+            : base(name)
+        {
             this.content = content;
-     }
+        }
         public override void Print()
         {
-            Console.WriteLine("Слово "+name+"  Слово:" + content);
-           
+            Console.WriteLine("Слово " + name + "  Слово:" + content);
+
         }
         public override void Print_Content()
         {
             Console.Write(content);
-
         }
     }
 }
