@@ -18,4 +18,4 @@
 Наведемо UML-діаграму класів:
 
 
-![alt text](https://github.com/Ines1999/LabCSharp/blob/Lab1/UML2.PNG)
+![alt text](https://github.com/Ines1999/LabCSharp/blob/Lab2/UML2.PNG)
