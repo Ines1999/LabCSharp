@@ -39,7 +39,7 @@ namespace Zalik1
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
                 DataSet ds = new DataSet();
                 adapter.Fill(ds);
-          
+            
                 connection.Close();
             }
         }
