@@ -19,12 +19,15 @@
 -	Вивести інформацію про користувачів, які не отримували повідомлення із заданою темою.
 -	Направити лист заданої людини із заданою темою всім адресатам.
 
-Реалізовано Шаблонний метод
+Реалізовано паттерни Шаблонний метод та Сінглтон.
 
-БД:
+Структура БД:
 
 
 ![alt text](https://github.com/Ines1999/LabCSharp/blob/Zalik/1.PNG)
+
+Вміст таблиць:
+
 ![alt text](https://github.com/Ines1999/LabCSharp/blob/Zalik/2.PNG)
 ![alt text](https://github.com/Ines1999/LabCSharp/blob/Zalik/3.PNG)
 
