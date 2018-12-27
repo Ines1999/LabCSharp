@@ -25,5 +25,6 @@
 
 
 ![alt text](https://github.com/Ines1999/LabCSharp/blob/Zalik/1.PNG)
-
+![alt text](https://github.com/Ines1999/LabCSharp/blob/Zalik/2.PNG)
+![alt text](https://github.com/Ines1999/LabCSharp/blob/Zalik/3.PNG)
 
