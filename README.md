@@ -23,7 +23,6 @@
 БД:
 
 
-![alt text](https://github.com/Ines1999/LabCSharp/blob/Lab1/1.PNG)
+![alt text](https://github.com/Ines1999/LabCSharp/blob/Zalik/1.PNG)
 
 
-![alt text](https://github.com/Ines1999/LabCSharp/blob/Lab1/1.PNG)
