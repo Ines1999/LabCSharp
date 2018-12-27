@@ -21,3 +21,6 @@
 Реалізовано Шаблонний метод
 
 БД:
+
+
+![alt text](https://github.com/Ines1999/LabCSharp/blob/Lab1/1.PNG)
